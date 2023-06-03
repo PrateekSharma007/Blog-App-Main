@@ -2,10 +2,13 @@ body{
     display: flex;
     flex-direction: row;
     padding: 10px;
-    /* max-width: 500px; */
-    /* margin: 0 auto; */
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
 
+}
+img{
+    max-width: 100%;
 }
 
 header{
@@ -27,3 +30,18 @@ nav{
     gap: 15px;
 }
 
+/* .text{
+    display: flex;
+} */
+.entry{
+    display: flex;
+    margin-bottom: 40px;
+}
+div.entry img{
+    width: 50%;
+    height: 50vh;
+    padding-right: 10px ;
+}
+div.entry p.title{
+    font-weight: 700;
+}
