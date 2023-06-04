@@ -4,21 +4,24 @@ import "./App.css"
 import "./components/Header"
 import Header from './components/Header';
 import Post from './Post';
+import Layout from './Layout';
+import Login from './Pages/Login';
+import Registerpage from './Pages/Registerpage';
 
 function App() {
   return (
 
-    // <Router>
-    // <div className="pt-20">
-
-    // </div> 
-    // </Router>
-    <main>
-      <Header/>
-      <Post/>
+    <Routes>
+      <Route path = "/" element = {<Layout/>} >
+        <Route index element = {<Post/>}/>
+        <Route path = {'/login'} element = {<Login/>}/>
+        <Route path = {'/register'} element = {<Registerpage/>} />
+      </Route>  
+    </Routes>
+      
       
     
-    </main>
+  
   )
 }
 
