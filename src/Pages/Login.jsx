@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
+import "./login.css";
 
 const Login = () => {
   return (
-    <form>
+    <form className = "login">
         <input type="text"  placeholder='username'/>
-        <input type="password" />
+        <input type="password" placeholder='password'/>
         <button>Login</button>
     </form>
   )
