@@ -1,9 +1,11 @@
-const express = require("express") ; 
-const app = express() ; 
+const express = require('express') 
+const app = express() 
 
-app.get("/test" , (req,res) => {
-    res.send("test ok")
+
+
+app.listen(5000) 
+
+
+app.get("/" , (req,res) =>{
+    res.send("Home ")
 })
-
-
-app.listen(4000 , () => console.log("Everything perfect")) ;
