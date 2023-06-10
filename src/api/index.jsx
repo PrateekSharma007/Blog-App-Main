@@ -1,12 +1,9 @@
-const express = require("express") 
-const app = express() 
+const express = require("express") ; 
+const app = express() ; 
 
-// app.get("/test" , (req,res) => {
-//     // res.json("everything ok")
-//     console.log("all good")
-// }) 
-
-
-app.listen(4000 , ()=>{
-    console.log("Server is listening on port: 4000 ")
+app.get("/test" , (req,res) => {
+    res.send("test ok")
 })
+
+
+app.listen(4000 , () => console.log("Everything perfect")) ;
